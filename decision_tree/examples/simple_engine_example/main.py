@@ -17,9 +17,9 @@ def make_tree() -> Step:
                     'Check the painting': Step(
                         'You see three rectangles of different sizes',
                         options={
-                            'Check the smallest rectangle': Step('TBD'),
+                            'Check the small rectangle': Step('TBD'),
                             'Check the medium rectangle': Step('TBD'),
-                            'Check the largest rectangle': Step('TBD'),
+                            'Check the large rectangle': Step('TBD'),
                         }
                     ),
                     'Check the corner': Step('TBD'),

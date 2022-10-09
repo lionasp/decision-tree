@@ -1,4 +1,4 @@
-from step import Step
+from decision_tree.step import Step
 
 
 class SimpleEngine:
