@@ -10,7 +10,7 @@ tree:
         link: do_nothing_1
 
   - name: left_door_1
-    text: You opened the right door. You come in and see a strange painting on the wall. Besides this, you can see something small in the far corner.
+    text: You opened the left door. However, it was a trap door and you fell into a pit of snakes. You died.
 
   - name: right_door_1
     text: You opened the right door. You come in and see a strange painting on the wall. Besides this, you can see something small in the far corner.
