@@ -1,5 +1,5 @@
-from engines.simple_engine import SimpleEngine
-from step import Step
+from decision_tree.engines.simple_engine import SimpleEngine
+from decision_tree.step import Step
 
 
 def make_tree() -> Step:

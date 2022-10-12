@@ -9,7 +9,7 @@ class YamlReader:
     def __init__(self, filename: str) -> None:
         self.filename = filename
 
-    def _read(self) -> str:
+    def read(self) -> dict:
         try:
             with open(self.filename, 'r') as f:
                 return yaml.safe_load(f)

@@ -1,0 +1,37 @@
+tree:
+  - name: ROOT
+    text: You are in a dark room. There is a door to your left and right, which one do you take?
+    options:
+      - text: left
+        link: left_door_1
+      - text: right
+        link: right_door_1
+      - text: do nothing
+        link: do_nothing_1
+
+  - name: left_door_1
+    text: You opened the left door. However, it was a trap door and you fell into a pit of snakes. You died.
+
+  - name: right_door_1
+    text: You opened the right door. You come in and see a strange painting on the wall. Besides this, you can see something small in the far corner.
+    options:
+      - text: Check the painting
+        link: painting_1
+      - text: Check the corner
+        link: tbd_1
+
+  - name: painting_1
+    text: You see three rectangles of different sizes
+    options:
+      - text: Check the small rectangle
+        link: tbd_1
+      - text: Check the medium rectangle
+        link: tbd_1
+      - text: Check the large rectangle
+        link: tbd_1
+
+  - name: do_nothing_1
+    text: The monster comes and eats you. You died.
+
+  - name: tbd_1
+    text: TBD
