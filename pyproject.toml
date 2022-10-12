@@ -9,6 +9,7 @@ packages = [{include = "decision_tree"}]
 [tool.poetry.dependencies]
 python = "^3.8"
 PyYAML = "^6.0"
+types-PyYAML = "^6.0.12"
 
 [tool.poetry.group.dev.dependencies]
 mypy = "^0.982"

@@ -8,7 +8,7 @@ class SimpleEngine:
     def go_next(self, decision: str) -> None:
         next_step = self._tree.options.get(decision)
         if next_step is None:
-            print('Invalid decision.')
+            print("Invalid decision.")
         else:
             self._tree = next_step
 
