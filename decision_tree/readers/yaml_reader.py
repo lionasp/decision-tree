@@ -11,9 +11,11 @@ class YamlReader:
 
     def read(self) -> dict:
         try:
-            with open(self.filename, 'r') as f:
+            with open(self.filename, "r") as f:
                 return yaml.safe_load(f)
         except FileNotFoundError:
-            raise YamlReaderError(f'File {self.filename} not found.')
+            raise YamlReaderError(f"File {self.filename} not found.")
         except yaml.YAMLError as exc:
-            raise YamlReaderError(f'Cannot read the file {self.filename}. Error: {exc}.')
+            raise YamlReaderError(
+                f"Cannot read the file {self.filename}. Error: {exc}."
+            )
