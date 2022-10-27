@@ -2,6 +2,7 @@ from decision_tree.engines.simple_engine import SimpleEngine
 from decision_tree.parsers.raw_object_parser import SimpleParser
 from decision_tree.readers.yaml_reader import YamlReader
 from decision_tree.step import Step
+from examples.utils import play_game
 
 
 def make_tree(filename: str) -> Step:
@@ -12,15 +13,4 @@ def make_tree(filename: str) -> Step:
 if __name__ == "__main__":
     tree = make_tree("config.yaml")
     engine = SimpleEngine(tree)
-    while True:
-        print(f"*** {engine.get_current_step().text} ***")
-        if not engine.get_current_step().options:
-            break
-
-        print("Options:")
-        for option in engine.get_current_step().options:
-            print(f"\t{option}")
-
-        decision = input("What do you do? > ")
-        engine.go_next(decision)
-    print("Game over.")
+    play_game(engine)
